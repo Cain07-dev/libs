@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+libs/test.py
+libs/web.py
+libs_zip.egg-info/PKG-INFO
+libs_zip.egg-info/SOURCES.txt
+libs_zip.egg-info/dependency_links.txt
+libs_zip.egg-info/requires.txt
+libs_zip.egg-info/top_level.txt
