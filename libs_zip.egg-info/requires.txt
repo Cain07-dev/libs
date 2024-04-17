@@ -1,2 +1,8 @@
 selenium
 beautifulsoup4
+requests
+pillow
+pyautogui
+pandas
+Matplotlib
+numpy
