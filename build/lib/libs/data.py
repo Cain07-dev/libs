@@ -16,6 +16,8 @@ def read_data(file_path):
 
 # 막대그래프
 def show_bar(df, save_path=None):
+    # 폰트 설정
+    plt.rcParams['font.family'] = 'Malgun Gothic'
 
     plt.figure(figsize=(10, 6))
     df.plot(kind='bar', figsize=(10, 6))
