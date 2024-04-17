@@ -10,6 +10,7 @@ def capture_screen(save_path=None):
 
     # 파일 이름 생성
     file_name = input("파일 이름 입력: ")
+    file_name = file_name + ".png"
 
     # 저장 경로 설정
     if save_path:
@@ -47,15 +48,21 @@ def resize_image(file_path):
 
 # 폴더의 png파일들을 pdf파일로 변환
 def png_to_pdf(folder_path):
-    image_files = glob.glob(folder_path)
+    # 폴더 내의 PNG 파일 가져오기
+    image_files = glob.glob(f'{folder_path}/*.png')
 
     images = []
     for img_path in image_files:
         img = Image.open(img_path)
         images.append(img)
 
-    save_path  = input("저장 경로 입력: ")
-    images[0].save(save_path, save_all = True, append_images = images[1:])
+    # PDF로 저장할 파일 경로 입력
+    save_path = input("저장할 PDF 파일 경로 입력: ")
+
+    # PDF로 이미지 저장
+    images[0].save(save_path, save_all=True, append_images=images[1:], format="PDF")
+
+    print("PDF 파일이 성공적으로 저장되었습니다.")
 
 
 

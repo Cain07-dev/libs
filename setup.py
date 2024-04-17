@@ -3,7 +3,7 @@ import setuptools
 setuptools.setup (
     name = "libs_zip",
     packages = ["libs"],
-    version = "0.0.3",
+    version = "0.0.4",
     download_url = "",
     classifiers=[
         "Programming Language :: Python :: 3"],
@@ -19,5 +19,6 @@ setuptools.setup (
         'pandas',
         'Matplotlib',
         'numpy',
+        'openpyxl',
     ],
 )
