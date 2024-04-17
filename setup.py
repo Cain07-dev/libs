@@ -8,7 +8,16 @@ setuptools.setup (
     classifiers=[
         "Programming Language :: Python :: 3"],
     install_requires=[
+        # web
         'selenium',
         'beautifulsoup4',
+        'requests',
+        # image
+        'pillow',
+        'pyautogui',
+        # data
+        'pandas',
+        'Matplotlib',
+        'numpy',
     ],
 )
